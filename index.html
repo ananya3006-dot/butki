@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday BUTKI</title>
+  <style>
+    body 
+       { margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffafc;}
+    
+    section 
+      {padding: 50px 20px;
+      text-align: center;}
+   
+    h1, h2 
+     { color: #ff3399;}
+    
+    button 
+      {background-color: #ff69b4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;}
+    
+    .slider img 
+     { width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;}
+    
+      .reveal 
+     { display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
+      max-width: 700px;
+      margin-inline: auto;}
+    
+    ul 
+      {list-style: none;
+      padding: 0;}
+    
+    ul li 
+      {margin-bottom: 12px;}
+    
+  </style>
+</head>
+<body>
+
+<!-- 🎉 1. HOME PAGE -->
+<section style="background-color: #ffeef8;">
+  <h1><span id="typing"></span><span class="cursor">|</span></h1>
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+</section>
+
+<!-- 📸 2. MEMORY LANE -->
+<section style="background-color: #fff3f0;">
+  <h2>📸 Memory Lane</h2>
+  <div class="slider">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+    <img src="photo4.jpg">
+    <img src="photo5.jpg">
+    <img src="photo6.jpg">
+    <img src="photo7.jpg">
+  </div>
+</section>
+
+<!-- 💌 3. EMOTIONAL LETTER -->
+<section style="background-color: #fff0f5;">
+  <h2>💌 An Emotional Letter</h2>
+  <button onclick="document.getElementById('letter').style.display='block'">Click to Reveal</button>
+  <div id="letter" class="reveal">
+    Tu mere lie bhut special hai.. meri har sukh dukh ki sathi… meri jaan, meri bff, merii sab kch 💗  
+    Tujhse milke aisa laga jaise zindagi me ek aisi vibe mil gayi jo har mood me perfect fit baithti hai.  
+    Kabhi hassi, kabhi roothna, kabhi baatein share karna, aur kabhi chup rehke bhi sab keh dena — sab kuch tere sath alag hi feel deta hai.  
+    Tere bina sab thoda feeka lagta hai... aur tere sath har moment full *tadka wali maggi* jaisa spicy aur perfect 💕  
+    Kabhi kabhi tu irritate krti hai... lekin fir bhi tu meri BUTKI hai — aur hamesha rahegi 🐒  
+    Promise, dooriyon se hum kamzor nhi honge — kyunki hum dono ki dosti WhatsApp ke last seen jaisi strong hai 😤  
+    Love you infinitely... meri emotional atom bomb 💣💖
+  </div>
+</section>
+
+<!-- 🔥 4. BIRTHDAY ROAST -->
+<section style="background-color: #f0f8ff;">
+  <h2>🔥 Birthday Roast</h2>
+  <div style="font-size: 18px; max-width: 700px; margin: auto; color: #444; line-height: 1.6;">
+    <ul>
+      <li>🎂 Ek baar tu selfie lele jo blur na ho — pura NEET nikal jaayega tab tak 🤡</li>
+      <li>🐒 Tu chipkali hoti na... tab bhi tujhe cute hi bolti (aur thoda door rehti 😭)</li>
+      <li>📚 Tu commerce ki student hai, lekin calculation me mujhse hi poochhti hai 😌</li>
+      <li>🫣 Jab tu serious hoti hai... lagta hai Instagram band ho gaya ho 🤭</li>
+      <li>🩷 But fr honestly... even after roasting you, tujhe miss karne ka haq to sirf mujhe hi hai 😌</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 🌟 5. 10 REASONS YOU’RE SPECIAL -->
+<section style="background-color: #e6f7ff;">
+  <h2>🌟 10 Reasons You’re Special</h2>
+  <button onclick="document.getElementById('reasons').style.display='block'">Click to Reveal</button>
+  <div id="reasons" class="reveal">
+    <ol style="text-align: left; max-width: 700px; margin: auto;">
+      <li>Teri smile mood instantly accha kr deti hai 😊</li>
+      <li>Tu sabse pehle sunne wali hoti hai jab kuch bura hota hai 💬</li>
+      <li>Joke krti hai... aur khud hi sabse zyada hasti hai 🤣</li>
+      <li>Mere sab secrets tujhme safe rehte hain 🔒</li>
+      <li>Tere bina Insta DM aur WhatsApp boring lagta hai 😒</li>
+      <li>Tu bina bole sab samajh leti hai 🧠</li>
+      <li>Tera presence hi comfort deta hai 🤗</li>
+      <li>Tu mere har phase ka part rahi hai, sad ya savage 🫶🏻</li>
+      <li>Tu irritate krti hai... but fir bhi sabse zyada pyari hai 😤❤️</li>
+      <li>Bas tu meri BUTKI hai... aur koi bhi teri jagah nahi le sakta 💘</li>
+    </ol>
+  </div>
+</section>
+
+<!-- Typing Animation Script -->
+<script>
+const text = "Happy Birthday BUTKI 🎉💖";
+let i = 0;
+function typeWriter() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
+typeWriter();
+</script>
+
+</body>
+</html>
